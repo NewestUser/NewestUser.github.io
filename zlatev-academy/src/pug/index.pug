@@ -1,0 +1,91 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Zlatev Academy - Java курс
+
+        link(rel='icon', type='image/x-icon', href='static/assets/favicon.ico')
+
+        include includes/css.pug
+
+    body
+        include includes/navbar.pug
+
+        // Page Header
+        header.masthead(style="background-image: url('static/assets/img/home-bg.jpg')")
+            .container.position-relative.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.justify-content-center
+                    .col-md-10.col-lg-8.col-xl-7
+                        .site-heading
+                            h1 Програмиране с Java
+                            span.subheading Запиши се до 25.06.2022
+
+        // Main Content
+        .container.px-4.px-lg-5
+            .row.gx-4.gx-lg-5.justify-content-center
+                .col-md-10.col-lg-8.col-xl-7
+
+
+        // Post Content
+        article.mb-4
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.justify-content-center
+                    .col-md-10.col-lg-8.col-xl-7
+                        
+                        blockquote.blockquote 
+                            | За курса ще се използва програмният език Java, но концепциите, които ще бъдат покрити са основополагащи и приложими и в други езици като C#, Python, Go.
+
+                        h2.section-heading За кого е подходящ курса?
+                        p
+                            | Курса е подходящ за хора без опит проявяващи интерес към сферата, завършващи ученици, студенти и работещи. Препоръчително е да се знае английски език.
+                        
+                        h2.section-heading Какво ще съдържа
+                        p
+                            | 1. Примитивни типове<br/>
+                            | 2. Условни оператори и цикли<br/>
+                            | 3. Масиви<br/>
+                            | 4. Символни низове<br/>
+                            | 5. Обектно ориентирано програмиране<br/>
+                            | 6. Конструктори, модификатори за достъп, пакети<br/>
+                            | 7. Наследяване<br/>
+                            | 8. Абстракция<br/>
+                            | 9. Колекции<br/>
+                            | 10. Файлове и входно/изходни операции<br/>
+                            | 11. Generics<br/>
+                        
+                        h2.section-heading Бонус
+                        p
+                            | • Лектор с над 8 години професионален опит, който е преподавал и в други академии<br/>
+                            | • Дискусии за реални проблеми от практиката<br/>
+                            | • Интервю задачи по време на курса<br/>
+                            | • Съвети за изготвяне на CV <br/>
+                            | • Примерно интервю <br/>
+                            | • Индивидуално внимание и връщане на обратна връзка на конкретни задачи и домашни
+                            | • Напътствия и следващи стъпки
+
+                        h2.section-heading Кой е лектора?
+                        p
+                        .text-center
+                            img.img-fluid.rounded-circle.img-member-size(src= 'static/assets/team/marian.jpg', alt='Лектор')
+                        span.caption.text-muted
+                            | Мариан Златев
+                        p
+                            | Професионално работи като Java backend developer. Има известен frontend опит. През свободното си време разработва мобилни приложения. Активно поддържа <a href="https://caloriecounter.bg/">Калориен Калкулатор</a> с над 100 000 инсталации използвайки технологии като Kotlin, Swift и Go.
+                        
+                        h2.section-heading Как ще се води курса?
+                        p
+                            | Курса ще се води online два пъти седмично, след работно време в продължение на два месеца. Детайлите ще се изяснят след сформирането на група.
+                        
+                        .d-flex.justify-content-center.mb-4
+                            a.btn.btn-primary.text-uppercase(href='https://mzlatev91.getform.com/o4n2p') Запиши се
+                
+
+        include includes/footer.pug
+
+        include includes/scripts.pug
