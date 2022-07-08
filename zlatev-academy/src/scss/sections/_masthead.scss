@@ -41,9 +41,21 @@ header.masthead {
     .site-heading {
         text-align: center;
 
-        h1 {
-            font-size: 3rem;
-        }
+        @media (min-width: 100px) {
+            h1 {
+                font-size: 2rem
+            }
+          }
+          
+          /* Large devices (desktops, 992px and up) */
+          @media (min-width: 992px) { 
+            h1 {
+                font-size: 3rem
+            }
+          }
+        // h1 {
+            // font-size: 3rem; // I have removed this and changed the rem to be screen size specific because on small screens a white space on the rightside of the index.html appears
+        // }
 
         .subheading {
             font-size: 1.5rem;
