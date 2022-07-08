@@ -8,4 +8,9 @@ module.exports = function renderAssets() {
     const destPath = upath.resolve(upath.dirname(__filename), '../dist/static/.');
     
     sh.cp('-R', sourcePath, destPath)
+
+    const faviconSrcPath = upath.resolve(upath.dirname(__filename), '../src/favicon.ico');
+    const faviconDestPath = upath.resolve(upath.dirname(__filename), '../dist/');
+    
+    sh.cp('', faviconSrcPath, faviconDestPath)
 };
