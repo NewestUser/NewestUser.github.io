@@ -11252,3 +11252,12 @@ header.masthead .site-heading .h1 {
   width: 100%;
   height: auto;
 }
+
+.cooke-consent {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 8px;
+  font-size: 14px;
+  z-index: 120;
+}

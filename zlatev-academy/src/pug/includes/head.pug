@@ -1,0 +1,29 @@
+mixin head(pageTitle, canonicalUrl, description) 
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content= description)
+        meta(name='keywords', content='програмиране, курс по програмиране, java, git, курс по java, начинаещ програмист')
+        meta(name='author', content='Мариан Златев')
+        meta(name='robots', content='index, noarchive')
+
+        title= pageTitle
+
+        link(rel='canonical', href= canonicalUrl)
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        meta(property='og:title', content= pageTitle)
+        meta(property='og:url', content= canonicalUrl)
+        meta(property='og:image', content='assets/img/home-bg.jpg')
+        meta(property='og:type', content='website')
+        meta(property='og:description', content= description)
+
+        include css.pug
+        
+        // Global site tag (gtag.js) - Google Analytics
+        script(async, src='https://www.googletagmanager.com/gtag/js?id=G-XWR9NNPBPX')
+        script(type='text/javascript').
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XWR9NNPBPX');

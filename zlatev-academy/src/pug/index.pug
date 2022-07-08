@@ -1,18 +1,12 @@
 doctype html
-html(lang='en')
+html(lang='bg')
 
-    head
+    - var pageTitle = 'Програмиране с Java | Zlatev Academy'
+    - var canonicalUrl = 'https://zlatevacademy.com'
+    - var description = 'Курс по програмиране за начинаещи, и хора с малко опит желаещи да затвърдят знанията си и да получат добра основа в сферата.'
 
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
-
-        title Zlatev Academy - Java курс
-
-        link(rel='icon', type='image/x-icon', href='static/assets/favicon.ico')
-
-        include includes/css.pug
+    include includes/head
+    +head(pageTitle, canonicalUrl, description)
 
     body
         include includes/navbar.pug
@@ -24,7 +18,7 @@ html(lang='en')
                     .col-md-10.col-lg-8.col-xl-7
                         .site-heading
                             h1 Програмиране с Java
-                            span.subheading Запиши се до 25.06.2022
+                            span.subheading Запиши се до 31.07.2022
 
         // Main Content
         .container.px-4.px-lg-5
@@ -47,17 +41,18 @@ html(lang='en')
                         
                         h2.section-heading Какво ще съдържа
                         p
-                            | 1. Примитивни типове<br/>
-                            | 2. Условни оператори и цикли<br/>
-                            | 3. Масиви<br/>
-                            | 4. Символни низове<br/>
-                            | 5. Обектно ориентирано програмиране<br/>
-                            | 6. Конструктори, модификатори за достъп, пакети<br/>
-                            | 7. Наследяване<br/>
-                            | 8. Абстракция<br/>
-                            | 9. Колекции<br/>
-                            | 10. Файлове и входно/изходни операции<br/>
-                            | 11. Generics<br/>
+                            | 1. Работа с git и терминал<br/>
+                            | 2. Примитивни типове<br/>
+                            | 3. Условни оператори и цикли<br/>
+                            | 4. Масиви<br/>
+                            | 5. Символни низове<br/>
+                            | 6. Обектно ориентирано програмиране<br/>
+                            | 7. Конструктори, модификатори за достъп, пакети<br/>
+                            | 8. Наследяване<br/>
+                            | 9. Абстракция<br/>
+                            | 10. Колекции<br/>
+                            | 11. Файлове и входно/изходни операции<br/>
+                            | 12. Generics<br/>
                         
                         h2.section-heading Бонус
                         p
